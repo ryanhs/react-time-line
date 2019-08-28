@@ -20,11 +20,13 @@ function TimlineItem({ time, text }) {
   );
 }
 
-TimlineItem.defaultProps = {};
+TimlineItem.defaultProps = {
+    text: '',
+};
 
 TimlineItem.propTypes = {
   time: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.node,
 };
 
 export default TimlineItem;

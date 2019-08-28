@@ -49,7 +49,7 @@ Timeline.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       ts: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
+      text: PropTypes.node,
     })
   ).isRequired,
 };
