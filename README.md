@@ -8,7 +8,7 @@ A react component to display event in a vertical timeline format. This is based 
 
 **Installation**
 ```
-npm install react-time-line
+npm install react-time-line@https://github.com/ryanhs/react-time-line#master
 ```
 
 **EDITED** i like this component, but it doesnt have any alternative to put a component as an item (i want to have a button / a link). that's why i forked this one. But, not make a PR, hope the original repo will have a better ways to provide the functionality.
