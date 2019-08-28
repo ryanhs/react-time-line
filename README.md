@@ -4,7 +4,7 @@
 
 A react component to display event in a vertical timeline format. This is based on the timeline found in [AdminLte](https://github.com/almasaeed2010/AdminLTE).
 
-![alt tag](https://github.com/arunghosh/react-time-line/raw/master/docs/timeline.png)
+![alt tag](https://github.com/ryanhs/react-time-line/raw/master/docs/timeline.png)
 
 **Installation**
 ```
@@ -18,12 +18,14 @@ npm install react-time-line
 
 ```javascript
 const events = [
-  {ts: "2017-09-17T12:22:46.587Z", text: 'Logged in'},
-  {ts: "2017-09-17T12:21:46.587Z", text: 'Clicked Home Page'},
-  {ts: "2017-09-17T12:20:46.587Z", text: 'Edited Profile'},
-  {ts: "2017-09-16T12:22:46.587Z", text: 'Registred'},
-  {ts: "2017-09-16T12:21:46.587Z", text: 'Clicked Cart'},
-  {ts: "2017-09-16T12:20:46.587Z", text: <a href="https://www.google.com/" _target="blank">test</a>},
+    {ts: "2017-09-17T12:22:46.587Z", text: 'Logged in'},
+    {ts: "2017-09-17T12:21:46.587Z", text: 'Clicked Home Page'},
+    {ts: "2017-09-17T12:20:46.587Z", text: 'Edited Profile'},
+    {ts: "2017-09-16T12:22:46.587Z", text: 'Registred'},
+    {ts: "2017-09-16T12:21:46.587Z", text: 'Clicked Cart'},
+    {ts: "2017-09-16T12:20:46.587Z", text: 'Clicked Checkout'},
+    {ts: "2017-09-18T12:22:46.587Z", text: <a href="https://www.google.com/">to google</a>},
+    {ts: "2017-09-18T12:22:46.587Z", text: <button onClick={() => alert(1)}>a button</button>},
 ];
 
 <Timeline items={events} />
