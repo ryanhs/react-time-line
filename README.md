@@ -11,6 +11,8 @@ A react component to display event in a vertical timeline format. This is based 
 npm install react-time-line
 ```
 
+**EDITED** i like this component, but it doesnt have any alternative to put a component as an item (i want to have a button / a link). that's why i forked this one. But, not make a PR, hope the original repo will have a better ways to provide the functionality.
+
 
 **Usage**
 
@@ -21,7 +23,7 @@ const events = [
   {ts: "2017-09-17T12:20:46.587Z", text: 'Edited Profile'},
   {ts: "2017-09-16T12:22:46.587Z", text: 'Registred'},
   {ts: "2017-09-16T12:21:46.587Z", text: 'Clicked Cart'},
-  {ts: "2017-09-16T12:20:46.587Z", text: 'Clicked Checkout'},
+  {ts: "2017-09-16T12:20:46.587Z", text: <a href="https://www.google.com/" _target="blank">test</a>},
 ];
 
 <Timeline items={events} />
@@ -50,4 +52,3 @@ To run test
 ```
 npm run test
 ```
-
